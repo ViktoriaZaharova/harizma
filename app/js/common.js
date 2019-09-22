@@ -20,7 +20,21 @@ $(document).ready(function() {
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         appendArrows: '.hall-arrows',
-        appendDots: '.hall-arrows'
+        appendDots: '.hall-arrows',
+        responsive: [
+            {
+                breakpoint: 630,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
 
@@ -30,6 +44,32 @@ $(document).ready(function() {
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 930,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 610,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     $('.reviews-slider').slick({
@@ -39,7 +79,21 @@ $(document).ready(function() {
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         appendArrows: '.reviews-arrows',
-        appendDots: '.reviews-arrows'
+        appendDots: '.reviews-arrows',
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     // fancybox
@@ -71,7 +125,7 @@ $(document).ready(function() {
     // show list all
     $('.btn-more').on('click', function (e) {
         e.preventDefault();
-        $('.gallery-box:hidden').slice(0, 4).slideDown();
+        $('.gallery-box:hidden').slice(0, 4).fadeIn();
 
         var onBlock = $('.gallery-box:hidden').length;
         if(onBlock <= 0) {
@@ -116,6 +170,20 @@ $(document).ready(function() {
         });
     });
 //end
+
+    // mail
+    $(".form").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            $(".form").trigger("reset");
+        });
+        return false;
+    });
 
 });
 
