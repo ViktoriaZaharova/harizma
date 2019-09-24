@@ -197,6 +197,7 @@ button
   align-items: flex-start
   font-size: 14px
   color: #ffffff
+  margin: 0 auto 0 0
   .top-text
     line-height: 22px
     margin: 0 0 7px
@@ -298,6 +299,10 @@ header
   p
     margin: 0 0 8px
 
+header
+  .schedule
+    margin: 0 90px 0 140px
+
 
 .schedule
   display: flex
@@ -383,7 +388,8 @@ header
 main
   background: url("../img/bg1.png") no-repeat center
     size: cover
-  padding: 220px 0 139px
+  padding: 220px 0 402px
+  margin: 0 0 -263px
   .container
     align-items: flex-start
     justify-content: space-between
@@ -515,6 +521,14 @@ strong
   overflow: hidden
   border-radius: 5px
   margin: 0 0 30px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(20, 20, 20, 0.46)
 
 .icon-play
   position: absolute
@@ -531,6 +545,7 @@ strong
   background-color: $red
   border-radius: 50%
   cursor: pointer
+  z-index: 1
   &:hover
     box-shadow: 0 26px 60px $red
     background-color: #eb2f2f
@@ -551,6 +566,7 @@ strong
   top: 50%
   transform: translate(-50%,-50%)
   color: #fff
+  z-index: 1
   p
     color: $yellow
     font-size: 36px
@@ -563,6 +579,14 @@ strong
   width: 170px
   height: 170px
   overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(20, 20, 20, 0.46)
 
 .gallery-preview
   position: relative
@@ -570,6 +594,14 @@ strong
   width: 100%
   border-radius: 5px
   overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(20, 20, 20, 0.46)
 
 .icon-gallery
   display: flex
@@ -580,6 +612,7 @@ strong
   top: 50%
   transform: translate(-50%,-50%)
   cursor: pointer
+  z-index: 1
   span
     display: inline-block
     font-size: 18px
