@@ -1,4 +1,4 @@
-$recepient = "zaharova181114@gmail.com"; //заменить на свой email
+$recepient = "fhbaumana@yandex.ru";
 $sitename = "HARIZMA";
 
 $name = trim($_POST["name"]);
