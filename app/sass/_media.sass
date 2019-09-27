@@ -290,6 +290,9 @@
       a
         font-size: 12px
 
+  .menu li a
+    font-size: 12px
+
 @media only screen and (max-width: 840px)
   header
     padding: 20px 0
@@ -418,15 +421,11 @@
   .footer-menu
     order: 2
 
+  .toggle-navigation a.phone
+    font-size: 12px
+
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 590px)
-  header
-    .address
-      display: none
-
-  .logo
-    margin: 0 auto 0 0
-
+@media only screen and (max-width: 680px)
   .toggle-navigation
     overflow-y: scroll
     height: 100%
@@ -445,9 +444,22 @@
         li
           a
             padding: 10px 5px
+    a.phone
+      margin: 20px auto
 
   .btn-close
     margin: 0 0 0 auto
+
+
+@media only screen and (max-width: 590px)
+  header
+    .address
+      display: none
+
+  .logo
+    margin: 0 auto 0 0
+
+
 
   .reviews-box
     height: auto
@@ -467,6 +479,11 @@
     margin: 0 auto
     width: 100%
     padding: 30px 25px
+    position: relative
+    left: 0
+    transform: translate(0)
+    right: 0
+    top: 0
 
   .section-maps
     .container

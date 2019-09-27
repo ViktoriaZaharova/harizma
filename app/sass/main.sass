@@ -365,6 +365,10 @@ header
   .container
     justify-content: flex-start
     align-items: center
+  a.phone
+    margin: 0 0 0 auto
+    color: #000
+    border-color: #333
 
 .menu
   display: flex
@@ -1314,6 +1318,11 @@ strong
   background: #fff
   padding: 39px 40px 37px
   margin: 80px 0 80px auto
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  right: 10%
+  z-index: 1
   h3
     width: 100%
     text-align: center
@@ -1328,10 +1337,7 @@ strong
       background: #fff
 
 .map
-  position: absolute
   width: 100%
-  left: 0
-  bottom: 0
   height: 507px
   iframe
     width: 100%
