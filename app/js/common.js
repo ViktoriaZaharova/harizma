@@ -118,6 +118,23 @@ $(document).ready(function() {
         }
     });
 
+    $('[data-fancybox="gallery"]').fancybox({
+        caption : function( instance, item ) {
+            var caption = $(this).data('caption') || '';
+
+            if ( item.type === 'image' ) {
+                caption = (caption.length ? caption + '<br />' : '') + '<a href="' + item.src + '"></a>' ;
+            }
+
+            return caption;
+        },
+        buttons: [
+            'download',
+            'thumbs',
+            'close'
+        ],
+    });
+
 
     // scroll
     $(window).scroll(function(){
