@@ -142,6 +142,21 @@
   .gallery-section__box
     width: 32%
 
+@media only screen and (max-width: 1060px)
+  .menu li a
+    padding: 35px 5px
+
+  .menu li
+    margin: 0 15px 0 0
+
+  .dropdown-menu
+    li
+      margin: 0
+      a
+        font-size: 12px
+        padding: 10px
+        margin: 0
+
 @media only screen and (max-width: 992px)
   .btn-burger
     margin: 0 20px 0 0
@@ -153,11 +168,7 @@
     -webkit-background-size: 15px
     background-size: 15px
 
-  .menu li a
-    padding: 35px 5px
 
-  .menu li
-    margin: 0 15px 0 0
 
   main
     padding: 150px 0 120px
@@ -519,6 +530,7 @@
         li
           a
             padding: 10px 5px
+            text-align: center
     a.phone
       margin: 20px auto
 
@@ -543,6 +555,20 @@
 
   .about-hall h2
     margin: 0 0 30px
+
+  .dropdown-menu
+    position: relative
+    top: 0
+    left: 0
+    min-width: auto
+    width: auto
+    transform: translate(0)
+    li
+      width: auto
+      display: block
+      a
+        text-align: center
+        width: auto
 
 @media only screen and (max-width: 590px)
   header

@@ -21,6 +21,10 @@ $(document).ready(function() {
         return false;
     });
 
+    $('.toggle-links').click(function () {
+       $(this).siblings('.dropdown-menu').slideToggle();
+    });
+
 
     // slider
     $('.hall-slider').slick({
