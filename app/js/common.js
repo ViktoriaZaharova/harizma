@@ -33,7 +33,6 @@ $(document).ready(function() {
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
-        appendArrows: '.hall-arrows',
         appendDots: '.hall-arrows',
         responsive: [
             {
