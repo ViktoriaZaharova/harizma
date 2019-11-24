@@ -85,6 +85,40 @@ $(document).ready(function() {
         ]
     });
 
+    $('.read-more__slider').slick({
+        slidesToShow: 4,
+        dots: true,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 930,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 610,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
     $('.reviews-slider').slick({
         slidesToShow: 3,
         dots: true,

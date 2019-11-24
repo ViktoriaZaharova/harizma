@@ -102,6 +102,12 @@
     .gallery-box
       max-height: 180px
 
+  .news__box //new style
+    max-width: none
+    .text
+      max-width: none
+
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
@@ -141,6 +147,10 @@
 
   .gallery-section__box
     width: 32%
+
+  .news__box //new style
+    .text
+      width: calc(100% - 250px)
 
 @media only screen and (max-width: 1060px)
   .menu li a
@@ -638,6 +648,14 @@
 
   .gallery-section__box
     width: 100%
+
+  .news__box //new style
+    .text
+      padding: 20px 0 0 0
+      .btn
+        margin: 20px 0 0
+    .image
+      margin: 0 auto 20px
 
 @media only screen and (max-width: 480px)
   .about-photo
