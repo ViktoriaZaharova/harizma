@@ -178,8 +178,6 @@
     -webkit-background-size: 15px
     background-size: 15px
 
-
-
   main
     padding: 150px 0 120px
     margin: 0
@@ -264,13 +262,10 @@
     padding: 30px 0 0 0
 
   .price-content .price-box:nth-child(2), .price-content .price-box:nth-child(3), .price-content .price-box:nth-child(1)
-    max-width: 250px
-    -webkit-background-size: contain
-    background-size: contain
+    max-width: 200px
 
-  .price-content .price-box:nth-child(1)
-    -webkit-background-size: 120px
-    background-size: 120px
+
+
 
   .footer-menu li a
     min-width: 150px
@@ -284,6 +279,20 @@
 
   .gallery-box
     max-height: 150px
+
+  .line-top .price-box, .line-top .price-box:first-child, .line-top .price-box:nth-child(3), .line-top .price-box:nth-child(4), .line-top .price-box:nth-child(2)
+    &:before
+      background: transparent
+      height: 100%
+      width: 100%
+      border: 2px solid #ffc400
+        radius: 5px
+      box-shadow: 0 0 10px #ffc400
+
+  .line-top .price-box:first-child
+    &:before
+      border-color: #3084E4
+      box-shadow: 0 0 10px #3084E4
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 920px)
@@ -395,7 +404,6 @@
     max-width: none
     width: auto
     min-width: auto
-    border: 2px solid $blue
 
   .line-top .price-box
     min-height: 60px
@@ -403,8 +411,6 @@
     padding: 5px
     font-size: 16px
     flex: 1
-    &:nth-child(2), &:nth-child(3)
-      border: 2px solid $yellow
 
   .price-content .price-box:nth-child(2), .price-content .price-box:nth-child(3), .service-section .price-content .price-box:last-child
     background: transparent

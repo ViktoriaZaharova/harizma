@@ -1280,24 +1280,54 @@ strong
         margin: 0
 
     &:first-child
-      max-width: 170px
+      max-width: 110px
     &:nth-child(2)
-      max-width: 370px
+      max-width: 278px
+    &:nth-child(3)
+      max-width: 318px
     &:last-child
-      max-width: 376px
+      max-width: 198px
 
 
 .line-top
   .price-box
     font-size: 20px
-    height: 100px
-    background: url("../img/border-yellow.png") no-repeat center
-      size: cover
+    height: 86px
+    position: relative
+    background: transparent
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      background: url("../img/border-yellow.png") no-repeat center
+        size: cover
+      width: 140px
+      height: 115px
+    &:first-child
+      &:before
+        background: url("../img/border-blue.png") no-repeat center
+          size: cover
+
+        height: 115px
+    &:nth-child(2)
+      &:before
+        width: 308px
+    &:nth-child(3)
+      &:before
+        background: url("../img/border-yellow2.png") no-repeat center
+          size: cover
+        width: 348px
+    &:nth-child(4)
+      &:before
+        background: url("../img/border-yellow3.png") no-repeat center
+          size: cover
+        width: 228px
     strong
       color: $yellow
-    &:first-child
-      background: url("../img/border-blue.png") no-repeat center
-        size: cover
+
+
 
 
 .line-bottom
